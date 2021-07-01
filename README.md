@@ -1,4 +1,4 @@
-### Repeat Explorer
+### RepeatExplorer
 
 The following pipeline was used to identify repetitive DNA of Illumina sequencing of two sets of data: (1) whole genomic DNA (gDNA); and (2) probe of entire chromosome (obtained by flow sorting and fragmented by a DOP-PCR reaction). Both samples from the species *Holochilus sciureus* (2n = 56, NF = 56), a Neotropical rodent of tribe Oryzomyini.
 
