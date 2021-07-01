@@ -1,10 +1,10 @@
 ### Repeat Explorer
 
-The following pipeline was used to identify repetitive DNA sequences of the Illumina sequencing of two sets of data: (1) whole genomic DNA (gDNA); and (2) probe of entire chromosome (obtained by flow sorting and fragmented by a DOP-PCR reaction). Both samples from the species *Holochilus sciureus* (2n = 56, NF = 56), a Neotropical rodent of tribe Oryzomyini.
+The following pipeline was used to identify repetitive DNA of Illumina sequencing of two sets of data: (1) whole genomic DNA (gDNA); and (2) probe of entire chromosome (obtained by flow sorting and fragmented by a DOP-PCR reaction). Both samples from the species *Holochilus sciureus* (2n = 56, NF = 56), a Neotropical rodent of tribe Oryzomyini.
 
 - Software used:
 
-[RepeatExplorer](http://repeatexplorer.org/)
+[RepeatExplorer (command line version)](http://repeatexplorer.org/?page_id=166#command-line-version). Novák P, Neumann P, Pech J, Steinhaisl J, Macas J (2013). RepeatExplorer: a Galaxy-based web server for genome-wide characterization of eukaryotic repetitive elements from nextgeneration sequence reads. Bioinformatics, 29(6):792-793.
 
 **Simple analysis**
 
@@ -16,17 +16,9 @@ The following pipeline was used to identify repetitive DNA sequences of the Illu
 
 `/repeatexplorer/utils/fasta_interlacer -a sample0B_r1_filtered.fasta -b sample0B_r2_filtered.fasta -p sample0B_r1_r2_filtered_merged.fasta -x sample0B_r1_r2_filtered_nopair.fasta`
 
-**Step 3 > Clustering the repetitive elements:**
+**Step 3 > Cluster the repetitive elements:**
 
 `/repeatexplorer/seqclust_cmd.py -s sample0B_r1_r2_filtered_merged.fasta -d Rodentia -m .1 -p -c 50 -r 100000 -v sample0B > report_sample0B`
-
-
-
-
-
-
-
-
 
 **Comparative analysis**
 
@@ -52,7 +44,7 @@ The following pipeline was used to identify repetitive DNA sequences of the Illu
 
 `cat sample0B_r1_r2_filtered_merged_comparative.fasta sample1B_r1_r2_filtered_merged_comparative.fasta > sample0B1B_r1_r2_filtered_merged_comparative.fasta`
 
-**Step 5 > Clustering the repetitive elements:**
+**Step 5 > Cluster the repetitive elements:**
 
 `/repeatexplorer/seqclust_cmd.py -s sample0B1B_r1_r2_filtered_merged_comparative.fasta -d Rodentia -m .1 -p -c 50 -f 8 -r 100000 -v sample0B1B_comparative > report_sample0B1B_comparative`
 
@@ -65,5 +57,3 @@ The following pipeline was used to identify repetitive DNA sequences of the Illu
 - -f prefix_number.
 - -r number_of_memory_KB.
 - -v name_of_output_foder.
-
-
