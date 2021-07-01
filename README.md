@@ -4,7 +4,7 @@ The following pipeline was used to identify repetitive DNA of Illumina sequencin
 
 **Software used:**
 
-[RepeatExplorer (command line version)](http://repeatexplorer.org/?page_id=166#command-line-version). Novák P, Neumann P, Pech J, Steinhaisl J, Macas J (2013). RepeatExplorer: a Galaxy-based web server for genome-wide characterization of eukaryotic repetitive elements from nextgeneration sequence reads. Bioinformatics, 29(6):792-793.
+[RepeatExplorer (command line version)](http://repeatexplorer.org/?page_id=166#command-line-version). Novák P, Neumann P, Pech J, Steinhaisl J, Macas J (2013) RepeatExplorer: a Galaxy-based web server for genome-wide characterization of eukaryotic repetitive elements from nextgeneration sequence reads. Bioinformatics, 29(6):792-793.
 
 **Input data:**
 - Illumina sequencing data.
