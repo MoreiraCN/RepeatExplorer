@@ -9,7 +9,7 @@ The following pipeline was used to identify repetitive DNA of Illumina sequencin
 **Input data:**
 - Illumina sequencing data.
 
-**Simple analysis**
+**Simple analysis:**
 
 - Step 1 > Filter the reads by quality:
 
@@ -23,7 +23,7 @@ The following pipeline was used to identify repetitive DNA of Illumina sequencin
 
 `/repeatexplorer/seqclust_cmd.py -s sample0B_r1_r2_filtered_merged.fasta -d Rodentia -m .1 -p -c 50 -r 100000 -v sample0B > report_sample0B`
 
-**Comparative analysis**
+**Comparative analysis:**
 
 - Step 1 > Filter the reads by quality:
 
